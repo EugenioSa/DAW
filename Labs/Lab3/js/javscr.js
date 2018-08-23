@@ -43,3 +43,39 @@ function suma() {
       
 }
 
+
+
+
+function contador() {
+    
+    var arr = {1,0,4,-5,9,100,5,3,-2};
+    var pos,neg,cer;
+    
+    for(i=0; i< arr.length; i++) {
+        
+        if(arr[i] > 0){
+            pos++;
+        }
+        else 
+        if(arr[i] < 0){
+            neg++;
+        }
+        else{
+            cer++;
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
