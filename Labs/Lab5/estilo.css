@@ -1,0 +1,26 @@
+body {
+   
+    background-color: #27AE60;
+    
+font-style: normal;
+font-style: italic;
+font-style: oblique;
+
+}
+
+
+h1 {
+  color: blue;
+  font-size: 30px;
+}
+
+h2 {
+  color: black;
+  font-size: 20px;
+}
+
+img {
+    
+   height: 300px;
+    width: 250px;
+}
