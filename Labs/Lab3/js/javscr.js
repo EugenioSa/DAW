@@ -44,14 +44,12 @@ function suma() {
 }
 
 
-
-
 function contador() {
     
-    var arr = {1,0,4,-5,9,100,5,3,-2};
-    var pos,neg,cer;
+    var arr = [1,0,4,-5,9,100,5,3,-2,0];
+    var pos=0,neg=0,cer=0;
     
-    for(i=0; i< arr.length; i++) {
+    for(i=0; i< 10; i++) {
         
         if(arr[i] > 0){
             pos++;
@@ -66,9 +64,48 @@ function contador() {
         
     }
     
+    alert("Hay un arreglo con "+ neg + " numeros negativos, "+ pos + " numeros positivos y "+ cer + " ceros");
+    
 }
 
 
+
+function matriz(){
+    
+    
+    var arr = [[1,4,5,6,7],[3,6,9,10,1],[4,6,3,8,9]];
+    
+    res = new Array(3);
+    
+    var prom, acum = 0;
+    
+    
+    for(i=0;i<3;i++){
+        
+        for(j=0;j<5;j++){
+            
+            acum = acum + arr[i][j];
+        }
+        
+        prom = acum/5;
+        res[i] = prom;
+        
+    }
+    
+    
+    alert("Los promedios son de "+ res[0] + "," + res[1] + "," + res[2]);
+    
+}
+
+
+function inverso(){
+    
+    
+    var num;
+    
+    
+    
+}
 
 
 

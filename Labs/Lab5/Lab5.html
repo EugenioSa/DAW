@@ -27,23 +27,27 @@
         
         
         <h3>Introduce contraseña</h3>    
-        <form>
-            <br>
-            <input type="text" name="contraseña"><br>
+        
+        <form name="myForm" onsubmit="return password_validator()" method="post">
+            <input type="password" name="contraseña"> <br>
             <h3>Introduce contraseña de nuevo</h3> <br>
-            <input type="text" name="contraseña2">
-            
-            <br>
-            <input type="submit" value="Revisar password">
-    
+            <input type="password" name="contraseña2">
+            <input type="submit" value="Submit password">
         </form>
         
         
         
+        <br>
+        <br>
+        <br>
+        <h3>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</h3>
+        <h4>-Para evitar que el servidor tenga que recibir, chechar y regresar una notificación de la información, ya que esto solo ocupa tiempo extra</h4>
         
+        <h3>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</h3>
+        <h4>-Deshabilitando el javascript en el navegador</h4>
         
-        
-    
+        <h3>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</h3>
+        <h4>-Porque puede ahorrar trabajo en ciertas tareas, sin embargo, hablando de seguridad dejarlo como unico factor de protección no es algo eficiente.</h4>
     
     </body>
     
