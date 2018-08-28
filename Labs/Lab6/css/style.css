@@ -1,0 +1,85 @@
+
+
+
+body {
+   
+    background-color: #27AE60;
+    
+font-style: normal;
+font-style: normal;
+font-style: normal;
+
+}
+
+
+table {
+    
+    border: 5px solid black;
+    background-color: #80FF00;
+    
+    border-color: black;
+}
+
+
+
+h1 {
+  color: blue;
+  font-size: 20px;
+}
+
+h2 {
+  color: black;
+  font-size: 14px;
+}
+
+
+
+h4 {
+  color: blue;
+  font-size: 12px;
+}
+
+h5 {
+  color: black;
+  font-size: 10px;
+}
+p {
+font-style: normal;
+font-style: normal;
+font-style: normal;    
+  color: rgb(32,32,32);
+  text-align: left;
+z-index: 9999;
+}
+
+img{
+display:block;
+margin:auto;
+}
+
+body {
+  font-size: 15px;
+}
+body:after {
+  content: "MY HOBBYS"; 
+  font-size: 15em;  
+  color: rgba(137, 247, 109, 1);
+  z-index: 1;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+    
+   -webkit-transform: rotate(322deg);
+   -moz-transform: rotate(322deg);
+   -o-transform: rotate(322deg);
+   writing-mode: lr-tb;
+    
+    
+  
+}

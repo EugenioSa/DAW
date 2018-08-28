@@ -101,8 +101,22 @@ function matriz(){
 function inverso(){
     
     
-    var num;
+    var num,arr_cop;
+    var arr;
+    var j,i;
     
+    num = prompt("Introduce un numero", "");
+    arr = Array.from(num.toString());
+    j=num.length;
+    
+    for(i=0;i<num.length;i++){
+        
+        
+       // arr_cop[i] = arr[j-1];
+        j--;
+    }
+    
+    alert("El numero inverso es: "  );
     
     
 }
