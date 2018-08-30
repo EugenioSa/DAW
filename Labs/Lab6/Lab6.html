@@ -17,7 +17,8 @@
         <h5 align="right">Eugenio Salazar Almanza-A01701996</h5>
         <h5 align="right">A01701996@itesm.mx</h5>
         
-        <h1>Hobbys</h1>
+        <h1 id="titulo" onclick="time_func()">Hobbys</h1>
+        <h4>Click on the title to see the magic!</h4>
         <link rel="stylesheet" href="css/style.css" />
         <script type = "text/javascript" src = "js/design.js"></script>
         
@@ -37,7 +38,7 @@
             </tr>
             
             <tr>
-                <td> <img onmouseover="text_appear()" onmouseout="text_normal()" src="natacion.jpg"></td>
+                <td> <img onmouseclick="info_appear()" onmouseover="text_appear()" onmouseout="text_normal()" src="natacion.jpg"></td>
                 <td>
                     <div onmouseover="text_appear()" onmouseout="text_normal()">
                     <p id="nat">Disfruto bastante de los deportes en especial la natación ya que es uno de los deportes más completos que hay, esta puede ser practicada para recreación, deporte, ejercicio o supervivencia.</p>
@@ -47,15 +48,22 @@
             </tr>
            
             
-            <tr><td><img src="mma.png"></td></tr>
-        
+            <tr><td><img src="mma.png" ></td>
+                
+            
+            
+            </tr>
+      
             
             
             <tr>
                     <td><h3>Videojuegos</h3></td>
             </tr>
             
-            <tr><td><img src="over.jpg"></td></tr>
+            <tr>
+                <td><img  src="over.jpg"></td>
+            
+            </tr>
             
             <tr><td><img src="elder.jpg"></td></tr>
             
@@ -72,6 +80,18 @@
         </table>
         
         <br>
+        <form name="myForm" onsubmit="return info_appear()" method="post">
+            <h1>Registrate para recibir más información sobre mis hobbys</h1>
+            <h2>Nombre: <input onclick="info_name()" type="text" name="nom"></h2>
+            <h2>Correo <input onclick="info_corr()" type="text" name="cor"></h2>
+            
+            <br>
+             <input type="submit" value="Submit">
+        </form>
+        
+        <br>
+        
+        
         <br>
         
         
