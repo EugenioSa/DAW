@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 11 </title>
+    
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    </head>
+    
+    
+    
+<body>
+    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4"><header>Lab 11: Manejo de formas con php y modelo de capas</header></h1>
+        </div>
+    </div>
+    
+     <?php if ($errores): ?>
+       <ul style="color: #f00;">
+          <?php foreach ($errores as $error): ?>
+             <li> <?php echo $error ?> </li>
+          <?php endforeach; ?>
+       </ul>
+    <?php endif; ?>
+    
+    <div class="container-fluid">
+    
+        <form method="post" action="index.php">
+            <div class="col-5">
+                First name:<br>
+                    <input class="form-control" type="text" name="firstname">
+                <br>
+                Last name:<br>
+                <input class="form-control" type="text" name="lastname">
+                <br><br> 
+                Password:<br>
+                <input class="form-control" type="password" name="password">
+                <br><br>
+                Repeat password:<br>
+                <input class="form-control" type="password" name="password2">
+                <br><br>
+                Gender:<br>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other
+                <br><br>
+                Email:<br>
+                <input class="form-control" type="email" name="mail">
+                <br><br>
+                <input type="submit" class="btn btn-primary" value="Submit">
+                <br><br>
+            </div>
+        </form> 
+    
+    
+    
+    </div>
+    
+    <div class="container-fluid">
+    
+    <h2>Preguntas a responder</h2>
+    <br>
+    <h4>¿Por qué es una buena práctica separar el controlador de la vista?</h4>  
+        <h5>Es una buena practica debido a que primeramente el acomodo es más sencillo y facíl de entender para terceros. Además de que hay maneras más sencillas de corromper el control de una pagína si todo está en la vista.</h5>
+        
+    <h4>Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?
+        </h4>   
+        <h5>$_REQUEST: Es una variable super global es decir que puede ser accedida desde cualquier lado del script sin ser declarada como global</h5>
+        
+    <h4>Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.
+        </h4>
+        <h5>var_dump(): Va mostrabdo información de una variable mientras va cambiando</h5>
+        <h5>str_replace(): Dentro de algún string puede cambiar ciertas partes del string por otras</h5>
+        
+    <h4>¿Qué es XSS y cómo se puede prevenir?
+        </h4>
+        <h5>Es un tipo de vulnerabilidad que consiste en hacer carga de codigo del lado del cliente a un sitio que lo permita y así cambiar o conseguir información de este.</h5>
+        <h5>Es posible prevenirse por medio del uso de ciertas funciones que convierten los elementos input problematicos en elementos html normales que se pueden desechar.</h5>
+    
+    </div>
+    
+    
+    <footer>
+    
+    </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    </body>
+
+
+
+
+
+</html>
