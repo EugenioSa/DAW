@@ -1,7 +1,6 @@
 <?php
 
  include('lab9.html');
-    phpinfo();
     
     function prom($arr){
         
