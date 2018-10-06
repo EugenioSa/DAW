@@ -17,7 +17,7 @@ function connectDB(){
         die("Connection failed: " . mysqli_connect_error());
     }
     
-    
+    return $conn;
 }
 
 
@@ -34,7 +34,7 @@ function get_users(){
     
     $connection = connectDB();
     
-    $sql = "SELECT * FROM Usuarios";
+    $sql = "SELECT id,name,age,gender,mail,reg_date FROM Usuarios";
     
     $result = mysqli_query($connection,$sql);
     
@@ -49,7 +49,7 @@ function get_gender($gender){
     
     $connection = connectDB();
     
-    $sql = "SELECT nombre,edad,correo FROM Usuarios WHERE gender='$gender' ";
+    $sql = "SELECT id,name,age,gender,mail,reg_date FROM Usuarios WHERE gender='".$gender."' ";
     
     
     $result = mysqli_query($connection,$sql);
@@ -66,7 +66,7 @@ function get_users_age($age){
     
     $connection = connectDB();
     
-    $sql = "SELECT nombre FROM Usuarios WHERE gender='$age' ";
+    $sql = "SELECT id,name,age,gender,mail,reg_date FROM Usuarios WHERE age='".$age."' ";
     
     
     $result = mysqli_query($connection,$sql);

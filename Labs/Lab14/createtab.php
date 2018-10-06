@@ -17,16 +17,17 @@ if (!$conn) {
 $sql = "CREATE TABLE Usuarios (
 
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-firstname VARCHAR(30) NOT NULL,
-lastname VARCHAR(30) NOT NULL,
-email VARCHAR(50),
+name VARCHAR(30) NOT NULL,
+age INT(3) NOT NULL,
+gender VARCHAR(50),
+mail VARCHAR(50),
 reg_date TIMESTAMP
 
 )";
 
 
 if(mysqli_query($conn, $sql)){
-    echo "Tabla creada";
+   
 }else{
     echo "Error creando tabla " . mysqli_error($conn);
 }
